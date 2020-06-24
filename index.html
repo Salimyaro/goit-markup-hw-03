@@ -10,221 +10,229 @@
 </head>
 <body>
 	<header class="header">
-		<nav class="nav">
-			<a class="logo" href="./index.html"><span>Web</span> Studio</a>
-			<ul class="list nav-list">
-				<li><a class="nav-list__link current" href="./index.html">Студия</a></li>
-				<li><a class="nav-list__link" href="./portfolio.html">Портфолио</a></li>
-				<li><a class="nav-list__link" href="">Контакты</a></li>
+		<div class="container header-container">
+			<nav class="nav">
+				<a class="logo" href="./index.html"><span>Web</span> Studio</a>
+				<ul class="list nav-list">
+					<li class="nav-list__item"><a class="nav-list__link current" href="./index.html">Студия</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="./portfolio.html">Портфолио</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="">Контакты</a></li>
+				</ul>
+			</nav>
+			<ul class="list contacts-list">
+				<li class="contacts-list__item"><a class="contacts-list__link" href="mailto:info@devstudio.com"><img src="./images/icon/envelope.svg" alt=""> info@devstudio.com</a></li>
+				<li class="contacts-list__item"><a class="contacts-list__link" href="tel:+380961111111"><img src="./images/icon/smartphone.svg" alt=""> +38 096 111 11 11</a></li>
 			</ul>
-		</nav>
-		<ul class="list contacts">
-			<li class="contacts-list">
-				<img src="./images/icon/envelope.svg" alt="">
-				<a class="contacts-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-			</li>
-			<li class="contacts-list">
-				<img src="./images/icon/smartphone.svg" alt="">
-				<a class="contacts-list__link" href="tel:+380961111111">+38 096 111 11 11</a>
-			</li>
-		</ul>
+		</div>
 	</header>
 	<main>
 		<!-- Эффективные решения для вашего бизнеса -->
 		<section class="main-section">
-			<h1 class="main-section__title">Эффективные решения для вашего бизнеса</h1>
-			<button class="main-section__button">Заказать услугу</button>
+			<div class="container  main-section__container">
+				<h1 class="main-section__title">Эффективные решения<br>для вашего бизнеса</h1>
+				<button class="main-section__button">Заказать услугу</button>
+			</div>
 		</section>
 		<!-- Преимущества -->
 		<section class="benefits">
-			<ul class="list benefits-list">
-				<li class="benefits-list-item">
-					<img class="benefits-list-item__image" src="./images/icon/advantages/satellite.svg" alt="Спутниковая тарелка"/>
-					<h3 class="benefits-list-item__title">Внимание к деталям</h3>
-					<p class="benefits-list-item__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-				</li>
-				<li class="benefits-list-item">
-					<img class="benefits-list-item__image" src="./images/icon/advantages/clock.svg" alt="Часы"/>
-					<h3 class="benefits-list-item__title">Пунктуальность</h3>
-					<p class="benefits-list-item__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-				</li>
-				<li class="benefits-list-item">
-					<img class="benefits-list-item__image" src="./images/icon/advantages/pc.svg" alt="ПК"/>
-					<h3 class="benefits-list-item__title">Планирование</h3>
-					<p class="benefits-list-item__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-				</li>
-				<li class="benefits-list-item">
-					<img class="benefits-list-item__image" src="./images/icon/advantages/astronaut.svg" alt="Астронавт"/>
-					<h3 class="benefits-list-item__title">Современные технологии</h3>
-					<p class="benefits-list-item__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-				</li>
-			</ul>
+			<div class="container">
+				<ul class="list benefits-list">
+					<li class="benefits-list-item">
+						<img class="benefits-list-item__image" src="./images/icon/advantages/satellite.svg" alt="Спутниковая тарелка"/>
+						<h3 class="benefits-list-item__title">Внимание к деталям</h3>
+						<p class="benefits-list-item__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+					</li>
+					<li class="benefits-list-item">
+						<img class="benefits-list-item__image" src="./images/icon/advantages/clock.svg" alt="Часы"/>
+						<h3 class="benefits-list-item__title">Пунктуальность</h3>
+						<p class="benefits-list-item__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+					</li>
+					<li class="benefits-list-item">
+						<img class="benefits-list-item__image" src="./images/icon/advantages/pc.svg" alt="ПК"/>
+						<h3 class="benefits-list-item__title">Планирование</h3>
+						<p class="benefits-list-item__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+					</li>
+					<li class="benefits-list-item">
+						<img class="benefits-list-item__image" src="./images/icon/advantages/astronaut.svg" alt="Астронавт"/>
+						<h3 class="benefits-list-item__title">Современные технологии</h3>
+						<p class="benefits-list-item__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+					</li>
+				</ul>
+			</div>
 		</section>
 		<!-- Чем мы занимаемся -->
 		<section class="examples">
-			<h2 class="examples-title">Чем мы занимаемся</h2>
-			<ul class="list examples-list">
-				<li class="examples-list-item">
-					<img class="examples-list-item__image" src="./images/examples/desctop.jpg" alt="Десктопные приложения" width="370">
-					<h3 class="examples-list-item__title">Десктопные приложения</h3>
-				</li>
-				<li class="examples-list-item">
-					<img class="examples-list-item__image" src="./images/examples/mobile.jpg" alt="Мобильные приложения" width="370">
-					<h3 class="examples-list-item__title">Мобильные приложения</h3>
-				</li>
-				<li class="examples-list-item">
-					<img class="examples-list-item__image" src="./images/examples/design.jpg" alt="Дизайнерские решения" width="370">
-					<h3 class="examples-list-item__title">Дизайнерские решения</h3>
-				</li>
-			</ul>
+			<div class="container">
+				<h2 class="examples-title">Чем мы занимаемся</h2>
+				<ul class="list examples-list">
+					<li class="examples-list-item">
+						<img class="examples-list-item__image" src="./images/examples/desctop.jpg" alt="Десктопные приложения" width="370">
+						<h3 class="examples-list-item__title">Десктопные приложения</h3>
+					</li>
+					<li class="examples-list-item">
+						<img class="examples-list-item__image" src="./images/examples/mobile.jpg" alt="Мобильные приложения" width="370">
+						<h3 class="examples-list-item__title">Мобильные приложения</h3>
+					</li>
+					<li class="examples-list-item">
+						<img class="examples-list-item__image" src="./images/examples/design.jpg" alt="Дизайнерские решения" width="370">
+						<h3 class="examples-list-item__title">Дизайнерские решения</h3>
+					</li>
+				</ul>
+			</div>
 		</section>
 		<!-- Наша команда -->
 		<section class="team">
-			<h2 class="team-title">Наша команда</h2>
-			<ul class="list team-list">
-					<li class="team-list-item">
-						<img class="team-list-item__image" src="./images/team/kucherenko.jpg" alt="Николай Кучеренко" width="270">
-						<h3 class="team-list-item__title">Николай Кучеренко</h3>
-						<p class="team-list-item__text">Product Designer</p>
-						<ul class="list social-list">
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/instagram.svg" alt="instagram"></a>
-							</li>
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/twitter.svg" alt="twitter"></a>
-							</li>
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/facebook.svg" alt="facebook"></a>
-							</li>
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/linkedin.svg" alt="linkedin"></a>
-							</li>
-						</ul>
-					</li>
-					<li class="team-list-item">
-						<img class="team-list-item__image" src="./images/team/ivanova.jpg" alt="Ольга Иванова" width="270">
-						<h3 class="team-list-item__title">Ольга Иванова</h3>
-						<p class="team-list-item__text">Frontend Developer</p>
-						<ul class="list social-list">
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/instagram.svg" alt="instagram"></a>
-							</li>
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/twitter.svg" alt="twitter"></a>
-							</li>
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/facebook.svg" alt="facebook"></a>
-							</li>
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/linkedin.svg" alt="linkedin"></a>
-							</li>
-						</ul>
-					</li>
-					<li class="team-list-item">
-						<img class="team-list-item__image" src="./images/team/shevchenko.jpg" alt="Андрей Шевченко" width="270">
-						<h3 class="team-list-item__title">Андрей Шевченко</h3>
-						<p class="team-list-item__text">Marketing</p>
-						<ul class="list social-list">
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/instagram.svg" alt="instagram"></a>
-							</li>
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/twitter.svg" alt="twitter"></a>
-							</li>
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/facebook.svg" alt="facebook"></a>
-							</li>
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/linkedin.svg" alt="linkedin"></a>
-							</li>
-						</ul>
-					</li>
-					<li class="team-list-item">
-						<img class="team-list-item__image" src="./images/team/nikolaev.jpg" alt="Иван Николаев" width="270">
-						<h3 class="team-list-item__title">Иван Николаев</h3>
-						<p class="team-list-item__text">UI Designer</p>
-						<ul class="list social-list">
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/instagram.svg" alt="instagram"></a>
-							</li>
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/twitter.svg" alt="twitter"></a>
-							</li>
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/facebook.svg" alt="facebook"></a>
-							</li>
-							<li class="social-list-item">
-								<a class="social-list-item__link" href=""><img src="./images/icon/linkedin.svg" alt="linkedin"></a>
-							</li>
-						</ul>
-					</li>
-			</ul>
+			<div class="container">
+				<h2 class="team-title">Наша команда</h2>
+				<ul class="list team-list">
+						<li class="team-list-item">
+							<img class="team-list-item__image" src="./images/team/kucherenko.jpg" alt="Николай Кучеренко" width="270">
+							<h3 class="team-list-item__title">Николай Кучеренко</h3>
+							<p class="team-list-item__text">Product Designer</p>
+							<ul class="list social-list">
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/instagram.svg" alt="instagram"></a>
+								</li>
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/twitter.svg" alt="twitter"></a>
+								</li>
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/facebook.svg" alt="facebook"></a>
+								</li>
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/linkedin.svg" alt="linkedin"></a>
+								</li>
+							</ul>
+						</li>
+						<li class="team-list-item">
+							<img class="team-list-item__image" src="./images/team/ivanova.jpg" alt="Ольга Иванова" width="270">
+							<h3 class="team-list-item__title">Ольга Иванова</h3>
+							<p class="team-list-item__text">Frontend Developer</p>
+							<ul class="list social-list">
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/instagram.svg" alt="instagram"></a>
+								</li>
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/twitter.svg" alt="twitter"></a>
+								</li>
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/facebook.svg" alt="facebook"></a>
+								</li>
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/linkedin.svg" alt="linkedin"></a>
+								</li>
+							</ul>
+						</li>
+						<li class="team-list-item">
+							<img class="team-list-item__image" src="./images/team/shevchenko.jpg" alt="Андрей Шевченко" width="270">
+							<h3 class="team-list-item__title">Андрей Шевченко</h3>
+							<p class="team-list-item__text">Marketing</p>
+							<ul class="list social-list">
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/instagram.svg" alt="instagram"></a>
+								</li>
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/twitter.svg" alt="twitter"></a>
+								</li>
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/facebook.svg" alt="facebook"></a>
+								</li>
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/linkedin.svg" alt="linkedin"></a>
+								</li>
+							</ul>
+						</li>
+						<li class="team-list-item">
+							<img class="team-list-item__image" src="./images/team/nikolaev.jpg" alt="Иван Николаев" width="270">
+							<h3 class="team-list-item__title">Иван Николаев</h3>
+							<p class="team-list-item__text">UI Designer</p>
+							<ul class="list social-list">
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/instagram.svg" alt="instagram"></a>
+								</li>
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/twitter.svg" alt="twitter"></a>
+								</li>
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/facebook.svg" alt="facebook"></a>
+								</li>
+								<li class="social-list-item">
+									<a class="social-list-item__link" href=""><img src="./images/icon/linkedin.svg" alt="linkedin"></a>
+								</li>
+							</ul>
+						</li>
+				</ul>
+			</div>
 		</section>
 		<!-- Постоянные клиенты -->
 		<section class="clients">
-			<h2 class="clients-title">Постоянные клиенты</h2>
-			<ul class="list clients-list">
-				<li class="clients-list-item">
-					<a class="clients-list-item__link" href="">
-						<img src="./images/icon/customers/ya-co.svg" alt="ya-co">
-					</a>
-				</li>
-				<li class="clients-list-item">
-					<a class="clients-list-item__link" href="">
-						<img src="./images/icon/customers/co.svg" alt="co">
-					</a>
-				</li>
-				<li class="clients-list-item">
-					<a class="clients-list-item__link" href="">
-						<img src="./images/icon/customers/company.svg" alt="company">
-					</a>
-				</li>
-				<li class="clients-list-item">
-					<a class="clients-list-item__link" href="">
-						<img src="./images/icon/customers/foster.svg" alt="foster">
-					</a>
-				</li>
-				<li class="clients-list-item">
-					<a class="clients-list-item__link" href="">
-						<img src="./images/icon/customers/brand.svg" alt="brand">
-					</a>
-				</li>
-				<li class="clients-list-item">
-					<a class="clients-list-item__link" href="">
-						<img src="./images/icon/customers/tag.svg" alt="tag">
-					</a>
-				</li>
-			</ul>
+			<div class="container">
+				<h2 class="clients-title">Постоянные клиенты</h2>
+				<ul class="list clients-list">
+					<li class="clients-list-item">
+						<a class="clients-list-item__link" href="">
+							<img src="./images/icon/customers/ya-co.svg" alt="ya-co">
+						</a>
+					</li>
+					<li class="clients-list-item">
+						<a class="clients-list-item__link" href="">
+							<img src="./images/icon/customers/co.svg" alt="co">
+						</a>
+					</li>
+					<li class="clients-list-item">
+						<a class="clients-list-item__link" href="">
+							<img src="./images/icon/customers/company.svg" alt="company">
+						</a>
+					</li>
+					<li class="clients-list-item">
+						<a class="clients-list-item__link" href="">
+							<img src="./images/icon/customers/foster.svg" alt="foster">
+						</a>
+					</li>
+					<li class="clients-list-item">
+						<a class="clients-list-item__link" href="">
+							<img src="./images/icon/customers/brand.svg" alt="brand">
+						</a>
+					</li>
+					<li class="clients-list-item">
+						<a class="clients-list-item__link" href="">
+							<img src="./images/icon/customers/tag.svg" alt="tag">
+						</a>
+					</li>
+				</ul>
+			</div>
 		</section>
 	</main>
 	<footer class="footer">
-		<address class="address">
-			<a class="logo footer-logo" href="./index.html"><span>Web</span> Studio</a>
-			<ul class="address-list list">
-				<li><a class="address-list__street" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
-				<li><a class="address-list__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-				<li><a class="address-list__tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
-			</ul>
-		</address>
-		<div class="social">
-			<p class="social-title">присоединяйтесь</p>
-			<ul class="list social-list">
-				<li class="social-list-item">
-					<a class="social-list-item__link" href=""><img src="./images/icon/instagram.svg" alt="instagram"></a>
-				</li>
-				<li class="social-list-item">
-					<a class="social-list-item__link" href=""><img src="./images/icon/twitter.svg" alt="twitter"></a>
-				</li>
-				<li class="social-list-item">
-					<a class="social-list-item__link" href=""><img src="./images/icon/facebook.svg" alt="facebook"></a>
-				</li>
-				<li class="social-list-item">
-					<a class="social-list-item__link" href=""><img src="./images/icon/linkedin.svg" alt="linkedin"></a>
-				</li>
-			</ul>
-		</div>
-		<div class="subscribe">
-			<p class="subscribe-title">Подпишитесь на рассылку</p>
+		<div class="container">
+			<address class="address">
+				<a class="logo footer-logo" href="./index.html"><span>Web</span> Studio</a>
+				<ul class="address-list list">
+					<li><a class="address-list__street" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+					<li><a class="address-list__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+					<li><a class="address-list__tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+				</ul>
+			</address>
+			<div class="social">
+				<p class="social-title">присоединяйтесь</p>
+				<ul class="list social-list">
+					<li class="social-list-item">
+						<a class="social-list-item__link" href=""><img src="./images/icon/instagram.svg" alt="instagram"></a>
+					</li>
+					<li class="social-list-item">
+						<a class="social-list-item__link" href=""><img src="./images/icon/twitter.svg" alt="twitter"></a>
+					</li>
+					<li class="social-list-item">
+						<a class="social-list-item__link" href=""><img src="./images/icon/facebook.svg" alt="facebook"></a>
+					</li>
+					<li class="social-list-item">
+						<a class="social-list-item__link" href=""><img src="./images/icon/linkedin.svg" alt="linkedin"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="subscribe">
+				<p class="subscribe-title">Подпишитесь на рассылку</p>
+			</div>
 		</div>
 	</footer>
 </body>

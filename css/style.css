@@ -17,19 +17,56 @@ body {
 	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: .03em;
+	margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+	font-size: inherit;
+	margin: 0;    
+}
+button{
+	letter-spacing: inherit;
+	word-spacing: inherit;
+	text-transform: inherit;
+	display: inline-block;
+	text-align: center;
+	align-items: flex-start;
+	box-sizing: border-box;
+	margin: 0em;
+	font: inherit;
+	padding: 0;
+	border-width: 0px;
+	border-style: none;
+	border-color: transparent;
+	border-image: initial;
+	cursor: pointer;
+}
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .list{
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 
 
+/* HEADER =========================================================================================================================================================================================================== */
+.header-container{
+	display: flex;
+	align-items: center;
+}
 
-/* HEADER ================================================================================= */
 /* logo ------------------------------------------------------------------------------------*/
 .logo {
-	font-family: 'Raleway', sans-serif;
+	align-self: center;
 	color: #000000;
+	
+	font-family: 'Raleway', sans-serif;
 	font-size: 26px;
 	font-weight: 700;
 	letter-spacing: .03rem;
@@ -40,18 +77,40 @@ body {
 }
 
 /* Nav & Contacts---------------------------------------------------------------------------*/
-
-/* .nav{
-} */
-
+.nav{
+	display: flex;
+}
 .nav-list,
-.contacts{
+.contacts-list{
+	display: flex;
 	font-weight: 500;
 	letter-spacing: .02em;
 }
+.nav-list{
+	margin-left: 85px;
+}
+.nav-list__item:not(:last-child) {
+	margin-right: 50px;
+}
+.contacts-list{
+	align-items: center;
+	margin-left: auto;
+}
+.contacts-list__item:not(:first-child) {
+	margin-left: 30px;
+}
+.nav-list__link,
+.contacts-list__link{
+	display: inline-block;
+	padding-top: 30px;
+	padding-bottom: 31px;
+	text-decoration: none;
+}
 .nav-list__link{
 	color: var(--title-text-color);
-	text-decoration: none;
+}
+.contacts-list__link{
+	color: var(--primary-text-color);
 }
 .nav-list .current,
 .nav-list__link:hover,
@@ -60,18 +119,18 @@ body {
 .contacts-list__link:focus {
 	color: var(--accent-color);
 }
-.contacts-list__link{
-	color: var(--primary-text-color);
-	text-decoration: none;
-}
 
 
 
-
-/* INDEX ================================================================================== */
+/* INDEX ============================================================================================================================================================================================================ */
 /* Main Section --------------------------------------------------------------------------- */
 .main-section {
 	background-color: var(--footer-bg-color);
+}
+.main-section__container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .main-section__title {
 	font-weight: 900;
@@ -81,18 +140,20 @@ body {
 	letter-spacing: .06em;
 	text-transform: uppercase;
 	color: var(--white-text-color);
+	margin-bottom: 30px;
 }
 
 .main-section__button{
-	font-family: inherit;
+	width: 200px;
+	height: 50px;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.8;
-	text-align: center;
 	letter-spacing: .06em;
 	color: var(--white-text-color);
 	background-color: var(--accent-color);
-	font-family: Roboto;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
 }
 
 /* Benefits ------------------------------------------------------------------------------- */
@@ -199,7 +260,7 @@ color: var(--primary-text-color);
 
 
 
-/* PORTFOLIO ============================================================================== */
+/* PORTFOLIO ======================================================================================================================================================================================================== */
 .portfolio {
 	background-color: var(--primary-bg-color);
 }
@@ -211,7 +272,6 @@ color: var(--primary-text-color);
 } */
 
 .portfolio-filter-list-item__button-text {
-	font-family: inherit;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
@@ -259,25 +319,15 @@ color: var(--white-text-color);
 background-color: rgba(33, 150, 243, 0.9);
 }
 
-/* FOOTER ==================================================================================*/
+/* FOOTER ============================================================================================================================================================================================================*/
 .footer{
 	background-color: var(--footer-bg-color);
 }
 
 /* logo ------------------------------------------------------------------------------------*/
-.logo {
-	font-family: 'Raleway', sans-serif;
-	color: #000000;
-	font-size: 26px;
-	font-weight: 700;
-	text-decoration: none;
-	font-style: normal;
-}
-.logo > span{
-	color: var(--accent-color);
-}
-.footer-logo{
+.footer-logo {
 	color: var(--white-text-color);
+	font-style: normal;
 }
 
 /* Adress ----------------------------------------------------------------------------------*/
