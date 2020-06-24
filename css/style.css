@@ -405,7 +405,6 @@ button{
 	background: var(--primary-bg-color);
 	border: 1px solid var(--border-portfolio-color);
 	box-sizing: border-box;
-	overflow: hidden;
 }
 .portfolio-list__item:hover,
 .portfolio-list__item:focus{
@@ -416,28 +415,29 @@ button{
 }
 .portfolio-list__image {
 	display: block;
-	margin-bottom: 20px;
+	width: 100%;
 }
 .portfolio-list__title {
+	padding-top: 20px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--title-text-color);
-	margin-left: 24px;
+	padding-left: 24px;
 }
 .portfolio-list__text {
 	font-size: 16px;
 	line-height: 1.88;
 	color: var(--primary-text-color);
-	margin-left: 24px;
-	margin-bottom: 20px;
+	padding-left: 24px;
+	padding-bottom: 20px;
 }
 .portfolio-list__hover-text-wrapper{
 	display: none;
 	position: absolute;
-	height: 294px;
-   margin-top: -400px;
+	height: 292px;
+   margin-top: -398px;
 	background-color: rgba(33, 150, 243, 0.9);
 }
 .portfolio-list__hover-text {
