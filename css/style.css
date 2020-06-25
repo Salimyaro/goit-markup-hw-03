@@ -69,6 +69,7 @@ button{
 
 /* logo ------------------------------------------------------------------------------------*/
 .logo {
+	outline: none;
 	align-self: center;
 	color: #000000;
 	
@@ -107,6 +108,7 @@ button{
 }
 .nav-list__link,
 .contacts-list__link{
+	outline: none;
 	display: inline-block;
 	padding-top: 30px;
 	padding-bottom: 31px;
@@ -154,6 +156,7 @@ button{
 	margin-bottom: 30px;
 }
 .main-section__button{
+	outline: none;
 	width: 200px;
 	height: 50px;
 	font-weight: 700;
@@ -300,6 +303,7 @@ button{
 	margin-right: 10px;
 }
 .social-list__link {
+	outline: none;
 	display: flex;
    justify-content: center;
    width: 44px;
@@ -334,6 +338,7 @@ button{
    margin: 15px;
 }
 .clients-list-item__link {
+	outline: none;
 	width: 170px;
 	height: 90px;
    box-sizing: border-box;
@@ -374,6 +379,7 @@ button{
 	margin-right: 8px;
 }
 .portfolio-filter-list__button-text {
+	outline: none;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
@@ -480,13 +486,16 @@ button{
 .address-list__street {
 	color: var(--white-text-color);
 	text-decoration: none;
+	outline: none;
 }
 .address-list__mail,
 .address-list__tel {
 	color: rgba(255, 255, 255, .6);
 	text-decoration: none;
+	outline: none;
 }
 .footer-link {
+	outline: none;
 	background-color: rgba(255, 255, 255, 0.1);;
 }
 /* Social & Subscribe-----------------------------------------------------------------------*/
