@@ -409,6 +409,7 @@ button{
 .portfolio-list__link {
 	display: block;
 	text-decoration: none;
+	outline: none;
 }
 .portfolio-list__link:hover,
 .portfolio-list__link:focus{
