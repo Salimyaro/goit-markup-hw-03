@@ -406,12 +406,13 @@ button{
 	border: 1px solid var(--border-portfolio-color);
 	box-sizing: border-box;
 }
-.portfolio-list__item:hover,
-.portfolio-list__item:focus{
-	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
-}
 .portfolio-list__link {
+	display: block;
 	text-decoration: none;
+}
+.portfolio-list__link:hover,
+.portfolio-list__link:focus{
+	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .portfolio-list__image {
 	display: block;
