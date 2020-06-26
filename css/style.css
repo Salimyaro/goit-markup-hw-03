@@ -405,8 +405,7 @@ button{
 	margin: -15px;
 }
 .portfolio-list__item {
-	position: relative;
-	width: 370px;
+	/* width: 350px; */
 	margin: 15px;
 	background: var(--primary-bg-color);
 	box-sizing: border-box;
@@ -421,6 +420,7 @@ button{
 	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 .portfolio-list__image {
+	position: relative;
 	display: block;
 	width: 100%;
 }
@@ -447,13 +447,16 @@ button{
 }
 .portfolio-list__hover-text-wrapper{
 	display: none;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 63px 24px;
 	position: absolute;
+	width: 370px;
 	height: 294px;
-   margin-top: -405px;
+   margin-top: -294px;
 	background-color: rgba(33, 150, 243, 0.9);
 }
 .portfolio-list__hover-text {
-	padding: 63px 24px;
 	font-size: 18px;
 	line-height: 1.56;
 	color: var(--white-text-color);
