@@ -409,7 +409,6 @@ button{
 	width: 370px;
 	margin: 15px;
 	background: var(--primary-bg-color);
-	border: 1px solid var(--border-portfolio-color);
 	box-sizing: border-box;
 }
 .portfolio-list__link {
@@ -425,6 +424,10 @@ button{
 	display: block;
 	width: 100%;
 }
+.portfolio-list__content{
+	border: 1px solid var(--border-portfolio-color);
+	border-top: transparent;
+}
 .portfolio-list__title {
 	padding-top: 20px;
 	font-weight: 700;
@@ -439,13 +442,14 @@ button{
 	line-height: 1.88;
 	color: var(--primary-text-color);
 	padding-left: 24px;
+	padding-top: 4px;
 	padding-bottom: 20px;
 }
 .portfolio-list__hover-text-wrapper{
 	display: none;
 	position: absolute;
-	height: 292px;
-   margin-top: -398px;
+	height: 294px;
+   margin-top: -405px;
 	background-color: rgba(33, 150, 243, 0.9);
 }
 .portfolio-list__hover-text {
@@ -463,6 +467,7 @@ button{
 }
 .footer-container{
 	display: flex;
+	align-items: baseline;
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
@@ -474,11 +479,13 @@ button{
 }
 
 /* Adress ----------------------------------------------------------------------------------*/
+.address {
+	margin-right: 69px;
+}
 .address-list {
 	line-height: 1.7;
 	font-style: normal;
 	margin-top: 20px;
-	margin-right: 69px;
 }
 .address-list__item:not(:last-child){
 	margin-bottom: 9px;
@@ -509,7 +516,6 @@ button{
 	color: var(--white-text-color);
 	font-style: normal;
 	margin-bottom: 20px;
-	margin-top: 12px;
 }
 
 
